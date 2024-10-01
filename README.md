@@ -12,3 +12,8 @@ git config --list
 git init # инициализация
 git add . # добавить все файлы
 git commit -m "Проект GO" # сделать коммит
+
+git status # текущий статус
+git diff # текущие изменения
+git diff --color-words более развернуто
+git checkout . # последний коммит
