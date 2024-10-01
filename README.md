@@ -8,3 +8,7 @@ git config --global core.quotepath off
 git config --global init.defaultBranch main
 git config --global core.autocrlf true
 git config --list
+
+git init # инициализация
+git add . # добавить все файлы
+git commit -m "Проект GO" # сделать коммит
