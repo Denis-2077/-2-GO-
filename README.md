@@ -1,4 +1,4 @@
-# .gitignore
+# .GO
 git config --global user.name “Денис”
 git config --global user.email “denis.stormy@gmail.com”
 
