@@ -1,0 +1,35 @@
+.footer__title {
+    margin-bottom: 54px;
+}
+.footer-social-list {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 50px;
+}
+
+.footer-social-list__link {
+    display: block;
+}
+
+.footer-info {
+    flex: 1;
+}
+
+.contacts-list__item, .contacts-list__item>a{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    column-gap: 30px;
+}
+.contacts-list__item:first-of-type{
+    margin-bottom: 39px;
+}
+.contacts-list__item:nth-child(2) {
+    margin-bottom: 10px;
+}
+.address__text>span {
+    display: block;
+}
+

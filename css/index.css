@@ -1,0 +1,12 @@
+@import "normalize.css";
+@import "vars.css";
+@import "default.css";
+@import "blocks/banner.css";
+@import "blocks/halls.css";
+@import "blocks/faq.css";
+@import "blocks/about.css";
+@import "blocks/footer.css";
+@import "blocks/testimonials.css";
+
+
+

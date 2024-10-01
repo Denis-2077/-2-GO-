@@ -1,0 +1,36 @@
+.testimonials__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.testimonial {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: start;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.testimonial__figure {
+    text-align: center;
+}
+
+.testimonial__img {
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.testimonial__name {
+    font-size: 20px;
+    color: var(--main-color);
+    margin-top: 10px;
+}
+
+.testimonial__text {
+    font-size: 20px;
+    color: var(--main-color);
+    line-height: 1.4;
+    margin-top: 20px;
+}
+

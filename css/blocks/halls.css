@@ -1,0 +1,56 @@
+.halls {
+
+}
+
+.container__halls {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.halls-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.halls-list__item {
+    width: 580px;
+    height: 349px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.halls-list__item--vibes {
+    background-image: url(../../image/hall_01.png);
+}
+
+.halls-list__item--west {
+    background-image: url(../../image/hall_03.png);
+}
+
+.halls-list__item--starwars {
+    background-image: url(../../image/hall_02.png);
+}
+
+.halls-list__item--neon {
+    background-image: url(../../image/hall_04.png);
+}
+
+.halls-list__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hall__title {
+    font-weight: 700;
+    font-size: 70px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    max-width: 211px;
+    text-align: center;
+}
