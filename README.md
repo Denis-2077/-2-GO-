@@ -16,4 +16,4 @@ git commit -m "Проект GO" # сделать коммит
 git status # текущий статус
 git diff # текущие изменения
 git diff --color-words более развернуто
-git checkout . # последний коммит
+git checkout . # последний коммит# -2-GO-
