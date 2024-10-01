@@ -18,3 +18,4 @@ git diff # текущие изменения
 git diff --color-words более развернуто
 git checkout . # последний коммит# -2-GO-
 # -2-GO-
+# -2-GO-
