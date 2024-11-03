@@ -33,3 +33,25 @@
     display: block;
 }
 
+.img-map {
+    float: right;
+}
+
+.item-item {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 177px;
+    margin-bottom: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.item-itemtwo {
+    display: flex;
+    justify-content: end;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 32px;
+}

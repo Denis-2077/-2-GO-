@@ -18,3 +18,9 @@
     padding-left: 100px;
 
 }
+
+.banner-group--item {
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 141px;
+}

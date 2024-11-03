@@ -1,0 +1,53 @@
+.have-list__item--vr {
+    background-image: url(/image/VR.png);
+}
+
+.have-list__item--audio {
+    background-image: url(/image/Audio.png);
+}
+
+.have-list__item--karaoke {
+    background-image: url(/image/Karaoke.png);
+}
+
+.have-list__item--game {
+    background-image: url(/image/Game.png);
+}
+
+.have-list__item--netflix {
+    background-image: url(/image/Netflix.png);
+}
+
+.have-list__item--ps {
+    background-image: url(/image/PS5.png);
+}
+
+.container-have {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.have-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.have-list__item {
+    width: 380px;
+    height: 228px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.have-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--main-color);
+    text-align: left;
+    margin-top: 166px;
+    margin-left: 40px;
+}
