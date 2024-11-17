@@ -48,9 +48,21 @@
                 </h1>
                 <p class="banner__subtitle">Новый формат игр и отдыха</p>
             </div>
+
+            <div>
+                <svg class="btn-down" width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
+                    <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white"/>
+                    <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white"/>
+                </svg>
+            </div>
+
             <div class="banner-group">
-                <p class="banner-group--item">4</p>
+                <h2 class="banner-group--item">4</h2>
                 <p class="banner-group--item__title">Тематических зала</p>
+                <h2 class="banner-group--item">NEW</h2>
+                <p class="banner-group--item__title">Новейшая аппаратура</p>
+                <button class="banner-btn">Забронировать</button>
             </div>
         </div>
     </section>
@@ -148,18 +160,18 @@
             <form class="reserve__form form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
 
                 <fieldset class="form__fieldset form__fieldset--halls">
-                    <legend class="form__legend">Выбери зал</legend>
-                    <label class="form__label">
-                        <input class="form__input" type="radio" name="hall" value="vibes">80's vibes
+                    <legend class="form__legend--hall">Выбери зал</legend>
+                    <label class="form__label" for="vibes">
+                        <input class="form__input" type="radio" name="hall" value="vibes" id="vibes">80's Vibes
                     </label>
-                    <label class="form__label">
-                        <input class="form__input" type="radio" name="hall" value="starwars">Star Wars
+                    <label class="form__label" for="starwars">
+                        <input class="form__input" type="radio" name="hall" value="starwars" id="starwars">Star Wars
                     </label>
-                    <label class="form__label">
-                        <input class="form__input" type="radio" name="hall" value="wildwest">Wild West
+                    <label class="form__label" for="wildwest">
+                        <input class="form__input" type="radio" name="hall" value="wildwest" id="wildwest">Wild West
                     </label>
-                    <label class="form__label">
-                        <input class="form__input" type="radio" name="hall" value="neon">Neon style
+                    <label class="form__label" for="neon">
+                        <input class="form__input" type="radio" name="hall" value="neon" id="neon">Neon Style
                     </label>
                 </fieldset>
     
@@ -211,79 +223,21 @@
     
                 <fieldset class="form__fieldset form__fieldset--datetime">
                     <legend class="form__legend">Выбери дату и время</legend>
-                    <label class="form__label">
-                        Дата*<input class="form__input" type="date" name="date" required>
-                        Время* <input class="form__input" type="time" name="time" required>
-                    </label>
-                    <label class="form__label">Количество человек*<input class="form__input" type="number" name="number" required></label>
-                    <label class="form__label">Имя*<input class="form__input" type="text" name="firstName" required></label>
-                    <label class="form__label">Фамилия*<input class="form__input" type="text" name="secondName" required></label>
-                    <label class="form__label">Номер телефона*<input class="form__input" type="tel" name="tel" required></label>
-                    <label class="form__label">Я старше 18 лет*<input class="form__input" type="checkbox" name="check" required></label>
+                    <label class="form__label"><input class="form__input" type="date" name="date" required placeholder="Дата"></label>
+                    <label class="form__label"><input class="form__input" type="time" name="time" required placeholder="Время"></label>
+                    <label class="form__label"><input class="form__input" type="number" name="number" required placeholder="Сколько человек"></label>
+                    <label class="form__label">Имя<input class="form__input" type="text" name="firstName" required></label>
+                    <label class="form__label">Фамилия<input class="form__input" type="text" name="secondName" required></label>
+                    <label class="form__label">Номер телефона<input class="form__input" type="tel" name="tel" required></label>
+                    <label class="form__label">E-mail<input class="form__input" type="email" name="email" required></label>
                 </fieldset>
-    
-                <button class="form__button form__button--submit" type="submit" name="booking">Забронировать</button>
+
+                <div class="form-btn">
+                    <button class="form__button form__button--submit" type="submit" name="booking">Забронировать</button>
+                </div>
             </form>
         </div>
     </section>
-
-            <!-- <h2 class="section__title">Забронировать зал просто</h2>
-            <form class="section-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-
-                <fieldset class="form-halls">
-                    <legend>Выбери зал</legend>
-                    <label><input type="radio" name="hall" value="vibes">80's vibes</label>
-                    <label><input type="radio" name="hall" value="starwars">Star Wars</label>
-                    <label><input type="radio" name="hall" value="wildwest">Wild West</label>
-                    <label><input type="radio" name="hall" value="neon">Neon style</label>
-                </fieldset>
-
-                <br>
-
-                <fieldset>
-                    <legend>Собери набор развлечений</legend>
-                    <fieldset>
-                        <legend>Приставка:</legend>
-                        <label><input type="radio" name="prefix" value="ps5">Play Station</label>
-                        <label><input type="radio" name="prefix" value="sega">Sega Mega Drive</label>
-                        <label><input type="radio" name="prefix" value="xbox">X-box One S</label>
-                        <label><input type="radio" name="prefix" value="dendy">Dendy</label>
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend>Настольные игры:</legend>
-                        <label><input type="checkbox" name="game" value="jenga">Jenga</label>
-                        <label><input type="checkbox" name="game" value="monopoly">Monopoly</label>
-                        <label><input type="checkbox" name="game" value="manchkin">Манчкин</label>
-                        <label><input type="checkbox" name="game" value="alias">Alias</label>
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend>Дополнительно:</legend>
-                        <label><input type="checkbox" name="additionally" value="karaoke">Караоке</label>
-                        <label><input type="checkbox" name="additionally" value="vr">VR</label>
-                    </fieldset>
-                </fieldset>
-
-                <br>
-
-                <fieldset>
-                    <legend>Выбери дату и время</legend>
-                    <label>Дата*<input type="date" name="date" required> Время* <input type="time" name="time" required></label>
-                    <label>Количество человек*<input type="number" name="number" required></label>
-                    <label>Имя*<input type="text" name="firsName" required></label>
-                    <label>Фамилия*<input type="text" name="secondName" required></label>
-                    <label>Номер телефона*<input type="tel" name="tel" required></label>
-                    <label>Я старше 18 лет*<input type="checkbox" name="check" required></label>
-                </fieldset>
-
-                <br>
-                <button type="reset">Сбросить</button>
-                <button type="submit" name="booking">Забронировать</button>
-                <label><input type="checkbox" name="checkYes" required>Согласен на обработку данных</label>
-
-            </form> -->
-        
 
     <section class="section about">
         <div class="container">
@@ -321,7 +275,7 @@
             <ul class="testimonials__container">
                 <li class="testimonial">
                     <figure class="testimonial__figure">
-                        <img class="testimonial__img" src="image/testimonials1.png" alt="Макс Самойлов">
+                        <img class="testimonial__img" src="image/testimonial--img__1.png" alt="Макс Самойлов">
                         <figcaption class="testimonial__name">Макс Самойлов</figcaption>
                     </figure>
                     <p class="testimonial__text">
@@ -331,7 +285,7 @@
     
                 <li class="testimonial">
                     <figure class="testimonial__figure">
-                        <img class="testimonial__img" src="image/testimonials2.png" alt="Оксана Григорьева">
+                        <img class="testimonial__img" src="image/testimonial--img__2.png" alt="Оксана Григорьева">
                         <figcaption class="testimonial__name">Оксана Григорьева</figcaption>
                     </figure>
                     <p class="testimonial__text">
@@ -341,7 +295,7 @@
     
                 <li class="testimonial">
                     <figure class="testimonial__figure">
-                        <img class="testimonial__img" src="image/testimonials3.png" alt="Никита Ященко">
+                        <img class="testimonial__img" src="image/testimonial--img__3.png" alt="Никита Ященко">
                         <figcaption class="testimonial__name">Никита Ященко</figcaption>
                     </figure>
                     <p class="testimonial__text">
@@ -440,9 +394,11 @@
                 </a>
             </li>
         </ul>
-
-    <p class="item-item">© Game Over, 2022</p>
-    <p class="item-itemtwo"> Design by Anastasia Ilina<br>ilina9825@gmail.com</p>
+        
+        <div class="item-developer">
+            <p class="item-one__copy">© Game Over, 2022</p>
+            <p class="item-two__copy"> Design by Anastasia Ilina<br>ilina9825@gmail.com</p>
+        </div>
     </div>
 </footer>
 </body>

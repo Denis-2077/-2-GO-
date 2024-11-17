@@ -1,4 +1,4 @@
-/* .{
+/* /* .{
     background-color: var(--main-form-bg);
     width: 1180px;
     height: 1114px;
@@ -36,7 +36,7 @@
     justify-content: center;
     width: 23%;
     padding: 10px;
-    background-color: #fff;
+    background-color: var(--main-color);
     color: #000;
     border-radius: 5px;
     font-size: 1rem;
@@ -49,7 +49,7 @@
 }
 
 .form__fieldset--halls .form__input[type="radio"]:checked + label {
-    background-color: #fff;
+    background-color: var(--main-color);
     color: #000;
 }
 
@@ -91,38 +91,40 @@
 .form__input[type="time"],
 .form__input[type="number"],
 .form__input[type="text"],
-.form__input[type="tel"] {
+.form__input[type="tel"],
+.form__input[type="email"] {
     padding: 10px;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--main-color);
     border: none;
-    border-radius: 5px;
     margin-top: 5px;
     font-size: 1rem;
     box-sizing: border-box;
     width: 100%;
 }
 
+.form-btn {
+    display: flex;
+    align-self: flex-end;
+}
 
 .form__button {
     padding: 15px 30px;
     margin: 10px;
     border: none;
     border-radius: 5px;
-    font-size: 1.1rem;
     cursor: pointer;
-}
-
-.form__button--reset {
-    background-color: #333;
-    color: #fff;
-}
-
-.form__button--submit {
-    background-color: #800080;
-    color: #fff;
+    width: 300px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--main-menu-bg);
 }
 
 .form__button--submit:hover {
-    background-color: #9a00b3;
+    background-color: var(--main-form-bg);
+    color: var(--main-color);
+    transition: all 1000ms ease;
+
 }

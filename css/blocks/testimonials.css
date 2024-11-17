@@ -18,6 +18,7 @@
 
 .testimonial__img {
     object-fit: cover;
+    overflow: hidden;
     margin: 0 auto;
 }
 

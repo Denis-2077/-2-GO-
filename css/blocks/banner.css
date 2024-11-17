@@ -19,8 +19,40 @@
 
 }
 
+.banner-group {
+    display: flex;
+    flex-direction: column;
+}
+
 .banner-group--item {
     font-size: 100px;
     font-weight: 900;
     line-height: 141px;
+    color: var(--main-btn-color);
+}
+
+.banner-group--item__title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px; 
+}
+
+.banner-btn {
+    padding: 10px 20px;
+    border: none;
+    color: var(--main-color);
+    border-radius: 10px;
+    filter: blur(0.5px);
+    background: rgb(108, 2, 135);
+    border-radius: 10px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    width: 374px;
+    height: 80px;
+    text-transform: uppercase;
+}
+
+.banner-btn:hover {
+    background-color: var(--main-btn-color);
 }
