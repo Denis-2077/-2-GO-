@@ -2,6 +2,7 @@
 @import "vars.css";
 @import "default.css";
 @import "blocks/header.css";
+@import "blocks/nav.css";
 @import "blocks/banner.css";
 @import "blocks/have.css";
 @import "blocks/halls.css";

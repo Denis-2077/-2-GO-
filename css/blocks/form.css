@@ -1,130 +1,449 @@
-/* /* .{
-    background-color: var(--main-form-bg);
-    width: 1180px;
-    height: 1114px;
-} */
-
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.reserve {
+    background-color: var(--main-purple);
 }
 
-.form__fieldset {
-    border: none;
-    margin: 15px 0;
-    padding: 0;
-    width: 100%;
-    text-align: left;
+.section_reserve {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-.form__legend {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+.reserve_title {
+    margin-bottom: 40px;
 }
 
-.form__fieldset--halls {
-    display: flex;
-    justify-content: space-between;
-}
-
-.form__fieldset--halls .form__label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 23%;
-    padding: 10px;
-    background-color: var(--main-color);
-    color: #000;
-    border-radius: 5px;
-    font-size: 1rem;
+label,
+input {
+    transition: 0.3s;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
 }
 
-.form__fieldset--halls .form__input[type="radio"] {
+.reserve__btn {
+    color: #6C0287;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    width: 300px;
+    height: 52px;
+    appearance: none;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    margin-left: auto;
+    display: block;
+    outline-offset: 1px;
+    outline-width: 1px;
+    outline-color: #CD06FF;
+    transition: 0.3s;
+    -webkit-box-shadow: 0px 0px 27px 22px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0px 0px 27px 22px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 24px 18px rgba(255, 255, 255, 0.2);
+}
+
+.reserve__btn:hover {
+    border-color: #6C0287;
+}
+
+.reserve__btn:focus {
+    outline-offset: -2px;
+    outline-width: 3px;
+    outline-color: #CD06FF;
+}
+
+.reserve__form {
+    margin-bottom: 40px;
+}
+
+.reserve__fieldset:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.reserve__fieldset:last-child {
+    margin-bottom: 0;
+}
+
+
+/*====Стили для названий====*/
+
+.reserve__legend {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.reserve__legend_center {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.entertainment__legend,
+.tablegame__legend,
+.additionally__legend {
+    margin-bottom: 23px;
+}
+
+
+/*====////*/
+
+
+/*====Стили для блоков формы======*/
+
+.rooms,
+.time,
+.collect {
+    display: flex;
+}
+
+
+/*=====/////////========*/
+
+
+/*===========================ROOMS=====================*/
+
+.rooms {
+    column-gap: 60px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/*кнопки залов*/
+
+.rooms__label {
+    background-color: var(--main-color);
+    color: var(--main-dark);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    text-align: center;
+    align-items: center;
+    border: 3px solid transparent;
+    max-height: 55px;
+    height: 55px;
+}
+
+
+/*===Прячем дефолтные чекбоксы*/
+
+.rooms__radio_custom {
     display: none;
 }
 
-.form__fieldset--halls .form__input[type="radio"]:checked + label {
-    background-color: var(--main-color);
-    color: #000;
+
+/*Состояния*/
+
+.rooms__label {
+    user-select: none;
 }
 
-.form__fieldset--prefix,
-.form__fieldset--games,
-.form__fieldset--additional {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
+.rooms__label:focus {
+    outline-offset: 3px;
+    outline-width: 3px;
+    outline-color: #640AA3;
 }
 
-.form__label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    font-size: 1rem;
+.rooms__label:hover {
+    border: 3px solid #640AA3;
+    background-color: #EADEED;
 }
 
-.form__input[type="checkbox"],
-.form__input[type="radio"] {
-    margin-right: 10px;
-    transform: scale(1.3);
-    cursor: pointer;
+.rooms__label:active {
+    background-color: #640AA3;
+    border: 3px solid white;
+    color: var(--main-color);
 }
 
-.form__fieldset--datetime {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+
+/* Checked */
+
+.rooms__radio_custom:checked+label {
+    background-color: #6C0287;
+    border: 3px solid #FFFFFF;
+    color: var(--main-color);
 }
 
-.form__fieldset--datetime .form__label {
-    width: calc(33.333% - 20px);
+
+/*=====================//////////////////===============*/
+
+
+/*=====================COLLECT===============*/
+
+.collect__fieldset {
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
 }
 
-.form__input[type="date"],
-.form__input[type="time"],
-.form__input[type="number"],
-.form__input[type="text"],
-.form__input[type="tel"],
-.form__input[type="email"] {
-    padding: 10px;
-    background-color: var(--main-color);
-    border: none;
-    margin-top: 5px;
-    font-size: 1rem;
-    box-sizing: border-box;
-    width: 100%;
+.collect {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 100px;
 }
 
-.form-btn {
-    display: flex;
-    align-self: flex-end;
-}
-
-.form__button {
-    padding: 15px 30px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 300px;
-    height: 60px;
+.console__label,
+.tablegame__label,
+.additionally__label {
     font-size: 22px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 37px;
+}
+
+.console__radio_custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 27px;
+    height: 27px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.console__radio_custom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-color: var(--main-color);
+    border: 1px solid #640AA3;
+    border-radius: 50%;
+}
+
+.console__radio_custom::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 27px;
+    height: 27px;
+    opacity: 0;
+    background-color: #640AA3;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+}
+
+.console__radio_custom:checked::before {
+    background-color: transparent;
+}
+
+.console__radio_custom:checked::after {
+    opacity: 1;
+}
+
+.console__radio_custom:focus {
+    outline-offset: 1px;
+    outline-width: 1px;
+    outline-color: #CD06FF;
+}
+
+
+/*=========ЧЕКБОКС==========*/
+
+.tableGame__checkbox_custom,
+.additionally__checkbox_custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.tableGame__checkbox_custom::before,
+.additionally__checkbox_custom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: var(--main-color);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+}
+
+.tableGame__checkbox_custom:after,
+.additionally__checkbox_custom::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 18px;
+    background-image: url(../../image/logo/checkbox-icon.svg);
+    opacity: 0;
+}
+
+.tableGame__checkbox_custom:checked:after,
+.additionally__checkbox_custom:checked::after {
+    opacity: 1
+}
+
+.console__radio_custom:hover:not(:disabled)::before,
+.tableGame__checkbox_custom:hover:not(:disabled):before,
+.additionally__checkbox_custom:hover:not(:disabled):before {
+    box-shadow: 0px 0px 10px rgba(0, 113, 227, 0.5);
+    border: 1px solid #CD06FF;
+}
+
+.tableGame__checkbox_custom:focus:before,
+.additionally__checkbox_custom:focus::before {
+    box-shadow: 0px 0px 10px rgba(113, 0, 227, 0.5);
+}
+
+.tableGame__checkbox_custom:focus,
+.additionally__checkbox_custom:focus {
+    outline-offset: 1px;
+    outline-width: 1px;
+    outline-color: #CD06FF;
+}
+
+input {
+    outline-offset: 1px;
+    outline-width: 1px;
+    outline-color: #CD06FF;
+}
+
+
+/*==============TIME=================*/
+
+.time {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.time__label {
     font-weight: 700;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: var(--main-menu-bg);
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
 }
 
-.form__button--submit:hover {
-    background-color: var(--main-form-bg);
-    color: var(--main-color);
-    transition: all 1000ms ease;
-
+.time__input {
+    display: block;
 }
+
+.time__block {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+}
+
+.time__block_info {
+    max-width: 280px;
+    row-gap: 14px;
+}
+
+.time__block_contacts {
+    row-gap: 14px;
+}
+
+.time__label_name,
+.time__label_phone-number,
+.time__label_mail,
+.time__label_lastname {
+    margin-bottom: 6px;
+}
+
+.time__input_name,
+.time__input_lastname,
+.time__input_phone-number,
+.time__input_mail {
+    width: 100%;
+    height: 52px;
+}
+
+.time__block_date {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 36px;
+}
+
+.time__input_persons {
+    width: 100%;
+    height: 52px;
+}
+
+.time__input_time,
+.time__input_date {
+    height: 52px;
+    width: 134px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row-group {
+    display: flex;
+    column-gap: 32px;
+}
+
+.time__input_date::-webkit-input-placeholder {
+    background-image: url(../../image/logo/small-arrow.svg);
+    background-position: center right;
+    width: 100%;
+    height: 23px;
+    content: "Дата";
+    display: block;
+    background-repeat: no-repeat;
+    color: var(--main-dark);
+}
+
+.time__input_time::-webkit-input-placeholder {
+    background-image: url(../../image/logo/small-arrow.svg);
+    background-position: center right;
+    width: 100%;
+    height: 23px;
+    content: "Время";
+    display: block;
+    background-repeat: no-repeat;
+    color: var(--main-dark);
+}
+
+.time__input_persons {
+    padding-left: 20px;
+    padding-right: 27px;
+}
+
+.time__input_persons::-webkit-input-placeholder {
+    background-image: url(../../image/logo/small-arrow.svg);
+    background-position: center right;
+    width: 100%;
+    height: 23px;
+    content: "Время";
+    display: block;
+    background-repeat: no-repeat;
+    color: var(--main-dark);
+}
+
+.time__input_persons::-webkit-outer-spin-button,
+.time__input_persons::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+
+/*======================================*/
