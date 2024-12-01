@@ -26,9 +26,9 @@
 }
 
 .faq-list__item:nth-child(even)::after {
-    background-image: url(/image/logo/open.svg);
+    background-image: url(../../image/logo/open.svg);
 }
 
 .faq-list__item:nth-child(odd)::after {
-    background-image: url(/image/logo/open-purple.svg);
+    background-image: url(../../image/logo/open-purple.svg);
 }
