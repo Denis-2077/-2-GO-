@@ -21,6 +21,12 @@
     text-transform: uppercase;
 }
 
-.header__callback-btn:hover {
-    background-color: var(--main-btn-color);
+/*---------- header btn ---------- */
+
+.header__callback-btn:hover, .header__callback-btn:focus {
+    background-color: rgb(108, 2, 135);
+}
+
+.header__callback-btn:active {
+    background-color: rgb(100, 10, 163);
 }

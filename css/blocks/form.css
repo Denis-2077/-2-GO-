@@ -49,6 +49,11 @@ input {
     outline-color: #CD06FF;
 }
 
+.reserve__btn:active {
+    background-color: rgb(234, 222, 237);
+    color: rgb(108, 2, 135);
+}
+
 .reserve__form {
     margin-bottom: 40px;
 }

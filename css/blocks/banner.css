@@ -77,9 +77,6 @@
     text-transform: uppercase;
 }
 
-.banner-btn:hover {
-    background-color: var(--main-btn-color);
-}
 .down-link {
     display: block;
     position: absolute;
@@ -88,7 +85,26 @@
     fill: transparent;
     bottom: 90px;
 }
-a:hover>svg {
-    color: red;
+
+/* ---------- banner btn ---------- */
+
+.banner-btn:hover, .banner-btn:focus {
+    background-color: rgb(132, 10, 163);
 }
+
+.banner-btn:active {
+    background-color: rgb(100, 10, 163);
+}
+
+a:hover>svg {
+    color: rgb(108, 2, 135);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+a:active>svg {
+    color: rgb(255, 255, 255);
+    background-color: rgb(205, 6, 255);
+}
+
 
