@@ -51,12 +51,12 @@
 }
 
 .svg-purple:active circle {
-     fill: rgb(205, 6, 255); /*цвет круга при нажатии */
-    stroke: rgb(205, 6, 255); /* Цвет обводки круга при нажатии */
+     fill: rgb(255, 255, 255); /*цвет круга при нажатии */
+    stroke: rgb(108, 2, 135); /* Цвет обводки круга при нажатии */
 }
 
 .svg-purple:active path {
-    fill: rgb(255, 255, 255); /*цвет стрелки при нажатии */
+    fill: rgb(108, 2, 135); /*цвет стрелки при нажатии */
 }
 
 .svg-white:hover circle {
@@ -69,8 +69,8 @@
 }
 
 .svg-white:active circle {
-    fill: rgb(205, 6, 255);
-   stroke: rgb(205, 6, 255);
+    fill: #440F51;
+   stroke: rgb(255, 255, 255);
 }
 
 .svg-white:active path {
