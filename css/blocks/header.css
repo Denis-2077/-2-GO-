@@ -30,3 +30,19 @@
 .header__callback-btn:active {
     background-color: rgb(100, 10, 163);
 }
+
+.nav-list__link:hover {
+    background-color: rgb(108, 2, 135);
+    -webkit-box-shadow: 0px 0px 27px 22px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0px 0px 27px 22px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 24px 18px rgba(205, 6, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-list__link:active {
+    background-color: rgb(100, 10, 163);
+    -webkit-box-shadow: 0px 0px 27px 22px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0px 0px 27px 22px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 24px 18px rgba(100, 10, 163, 0.2);
+}
