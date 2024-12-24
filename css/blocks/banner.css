@@ -96,13 +96,13 @@
     background-color: rgb(100, 10, 163);
 }
 
-a:hover>svg {
+.arrow:hover {
     color: rgb(108, 2, 135);
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
 }
 
-a:active>svg {
+.arrow:active {
     color: rgb(255, 255, 255);
     background-color: rgb(205, 6, 255);
 }
